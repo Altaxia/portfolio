@@ -1,32 +1,14 @@
-function openModal(projectId) {
-    var modal = document.getElementById("modal");
-    var modalImg = document.getElementById("modal-image");
-    var captionText = document.getElementById("modal-caption");
-    var projectLink = document.getElementById("project-link");
-
-    // Set the content dynamically based on the project ID
-    if (projectId === "project1") {
-        modalImg.src = "image1.jpg";
-        captionText.innerHTML = "Description du projet 1";
-        projectLink.href = "project1.html";
-    } else if (projectId === "project2") {
-        modalImg.src = "image2.jpg";
-        captionText.innerHTML = "Description du projet 2";
-        projectLink.href = "project2.html";
-    } else if (projectId === "project3") {
-        modalImg.src = "image3.jpg";
-        captionText.innerHTML = "Description du projet 3";
-        projectLink.href = "project3.html";
-    } else if (projectId === "project4") {
-        modalImg.src = "image4.jpg";
-        captionText.innerHTML = "Description du projet 4";
-        projectLink.href = "project4.html";
-    }
-
-    modal.style.display = "block";
-}
-
-function closeModal() {
-    var modal = document.getElementById("modal");
-    modal.style.display = "none";
-}
+$(document).ready(function(){
+    var mouseX, mouseY;
+    var ww = $( window ).width();
+    var wh = $( window ).height();
+    var traX, traY;
+    $(document).mousemove(function(e){
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+      traX = ((4 * mouseX) / 570) + 40;
+      traY = ((4 * mouseY) / 570) + 50;
+      console.log(traX);
+      $(".title").css({"background-position": traX + "%" + traY + "%"});
+    });
+  });

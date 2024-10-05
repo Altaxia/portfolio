@@ -3,63 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Léïa's portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Inclusion de jQuery -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </nav>
-        <h1>Nom de la Galerie</h1>
-    </header>
 
-    <section id="gallery">
-        <div class="grid">
-            <div class="grid-item wide" onclick="openModal('project1')">
-                <img src="main_image_forlorn_stars.PNG" alt="Titre du projet 1">
-                <p>Titre du projet 1</p>
-            </div>
-            <div class="grid-item" onclick="openModal('project2')">
-                <img src="Main_image_Sheep_Game.PNG" alt="Titre du projet 2">
-                <p>Titre du projet 2</p>
-            </div>
-            <div class="grid-item tall" onclick="openModal('project3')">
-                <img src="Main_image_CardGame.PNG" alt="Titre du projet 3">
-                <p>Titre du projet 3</p>
-            </div>
-            <div class="grid-item" onclick="openModal('project4')">
-                <img src="main_image_pixel.PNG" alt="Titre du projet 4">
-                <p>Titre du projet 4</p>
-            </div>
-            <div class="grid-item wide" onclick="openModal('project5')">
-                <img src="Main_image_Sheep_Game.PNG" alt="Titre du projet 5">
-                <p>Titre du projet 5</p>
-            </div>
-            <div class="grid-item" onclick="openModal('project6')">
-                <img src="Main_image_CardGame.PNG" alt="Titre du projet 6">
-                <p>Titre du projet 6</p>
-            </div>
-            <div class="grid-item tall" onclick="openModal('project7')">
-                <img src="Main_image_CardGame.PNG" alt="Titre du projet 7">
-                <p>Titre du projet 7</p>
-            </div>
-        </div>
-    </section>
+    <!-- Navbar -->
+    <nav>
+        <ul class="menu">
+            <li><a href="galerie.html">Portfolio</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+        </ul>
+    </nav>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modal-image">
-        <div id="modal-caption"></div>
-        <a id="project-link" href="#" target="_blank">En savoir plus</a>
+    <!-- Main Title -->
+    <div class="container">
+        <div class="title">LÉÏA PERCHERANCIER</div>
+        <div class="subtitle"> computer science student | creative dreamer | bookworm | sci-fi lover  </div>
     </div>
-
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script> 
 </body>
 </html>
