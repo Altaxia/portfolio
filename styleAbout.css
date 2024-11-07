@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,900);
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(#ebece7, white);
+  background: linear-gradient(#ebece7, white);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  max-width: 900px; /* Augmentation de la largeur maximale */
+  padding: 40px; /* Espacement interne plus grand */
+}
+
+.title {
+  font-weight: 800;
+  color: transparent;
+  font-size: 48px; /* Taille de police pour le titre principal */
+  background: url("Images/background.jpg") repeat;
+  background-position: 40% 25%;
+  background-clip: text;
+  text-align: center;
+  line-height: 60px; /* Ajuster la hauteur de ligne */
+  letter-spacing: -2px;
+}
+
+.profile {
+  margin-top: 30px; /* Espacement au-dessus du profil */
+  text-align: center; /* Centre le texte du profil */
+}
+
+.profile img {
+  width: 300px; /* Largeur de l'image */
+  height: auto; /* Hauteur automatique */
+  margin-bottom: 20px; /* Espacement en dessous de l'image */
+}
+
+.education-section {
+  display: flex;
+  justify-content: space-around; /* Espace entre les éléments */
+  margin-top: 30px; /* Espacement au-dessus de la section */
+}
+
+.education-item {
+  width: 30%; /* Largeur de chaque élément */
+  text-align: center; /* Centrer le texte */
+  padding: 15px; /* Espacement interne plus grand */
+  background: rgba(255, 255, 255, 0.8); /* Fond légèrement clair */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+.education-item h3,
+.education-item h4 {
+  color: red; /* Couleur rouge pour les titres */
+}
+
+/* Styles pour le menu de navigation */
+nav {
+    padding: 15px; /* Augmente l'espacement interne */
+    position: relative; /* Pour pouvoir utiliser 'top' */
+    top: 20px; /* Déplace le menu vers le bas */
+}
+
+.menu {
+    list-style: none; /* Suppression des puces */
+    margin: 0; /* Suppression des marges */
+    padding: 0; /* Suppression des espacements */
+    display: flex; /* Affichage en flex pour aligner horizontalement */
+    margin-left: 50px;/* Léger décalage du menu */
+}
+
+.menu li {
+    margin-right: 30px; /* Augmente l'espacement entre les éléments du menu */
+}
+
+.menu a {
+    color: rgb(153, 0, 0); /* Couleur du texte */
+    text-decoration: none; /* Suppression du soulignement */
+    font-size: 25px; /* Taille de police */
+    transition: color 0.3s ease; /* Transition pour une couleur fluide au survol */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+    color: #D71500; /* Changement de couleur au survol */
+}

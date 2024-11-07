@@ -123,3 +123,48 @@ nav {
     margin: 5px;
     font-size: 14px;
 }
+
+/* Section de présentation avec photo et texte */
+.presentation-section {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 80%;
+}
+
+.photo-container {
+    flex: 1;
+}
+
+.photo-profil {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #D71500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #990000;
+}
+
