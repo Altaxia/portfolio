@@ -119,11 +119,20 @@ nav {
 /* Informations du projet */
 .project-info {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     color: rgb(153, 0, 0);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 550;
     margin-top: 20px;
+    gap: 70px;
+}
+
+.project-info .info-item {
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 5px; 
 }
 
 .project-info .info-item h3 {
@@ -175,6 +184,7 @@ hr {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     z-index: 100;
+    text-decoration: none;
 }
 
 .close-btn:hover {
